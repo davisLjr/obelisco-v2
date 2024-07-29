@@ -1,0 +1,19 @@
+// src/styles/components/_button.scss
+
+// Sobrescribir los estilos de btn-primary
+.btn-primary {
+  // @extend .btn-primary;
+  // Tus estilos personalizados
+  background-color: #ff5733; // Color de fondo personalizado
+  border-color: #ff5733; // Color de borde personalizado
+
+  &:hover {
+    background-color: #c44121; // Color de fondo al pasar el ratón
+    border-color: #c44121; // Color de borde al pasar el ratón
+  }
+
+  &:focus,
+  &.focus {
+    box-shadow: 0 0 0 0.2rem rgba(255, 87, 51, 0.5); // Sombra de enfoque personalizada
+  }
+}

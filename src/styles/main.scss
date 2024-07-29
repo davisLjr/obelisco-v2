@@ -1,0 +1,15 @@
+// src/styles/main.scss
+
+// Import Bootstrap
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
+
+// Import custom variables and mixins
+@import "variables/variables";
+@import "variables/mixins";
+@import "variables/typography";
+
+// Import component styles
+@import "components/button";
+@import "components/banner";
+@import "components/typography";
+// @import "components/card";

@@ -1,7 +1,7 @@
 {
   "name": "obelisco-v2",
-  "version": "0.1.0",
-  "private": true,
+  "version": "0.1.7",
+  "private": false,
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
@@ -10,17 +10,23 @@
     "@types/node": "^16.18.104",
     "@types/react": "^18.3.3",
     "@types/react-dom": "^18.3.0",
+    "bootstrap": "^5.3.3",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-scripts": "5.0.1",
+    "sass": "^1.77.8",
     "typescript": "^4.9.5",
     "web-vitals": "^2.1.4"
   },
+  "main": "dist/styles.css",
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
+    "start": "concurrently \"npm run watch-css\" \"cd app && npm run dev\"",
+    "watch-css": "nodemon --watch src/styles --ext scss --exec \"npm run build-css\"",
+    "build-css": "sass src/styles/main.scss dist/styles.css",
+    "build": "npm run build-css",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "i-app": "cd app && npm install"
   },
   "eslintConfig": {
     "extends": [
@@ -39,5 +45,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2",
+    "nodemon": "^3.1.4"
   }
 }
