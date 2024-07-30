@@ -7,9 +7,12 @@
 @import "variables/variables";
 @import "variables/mixins";
 @import "variables/typography";
+@import "variables/colors";
 
 // Import component styles
-@import "components/button";
+@import "components/alert";
 @import "components/banner";
+@import "components/button";
+@import "components/cards";
 @import "components/typography";
 // @import "components/card";
