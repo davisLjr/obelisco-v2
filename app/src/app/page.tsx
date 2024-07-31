@@ -40,6 +40,7 @@ export default function Home() {
         <Link href="/cards" className="d-block">Tarjetas</Link>
         <Link href="/collapse" className="d-block">Colapsable</Link>
         <Link href="/button" className="d-block">Botones</Link>
+        <Link href="/block" className="d-block">Bloque de trámite</Link>
       </div>
       
     </main>
