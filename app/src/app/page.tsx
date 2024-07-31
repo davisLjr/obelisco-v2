@@ -1,5 +1,7 @@
-
-export default function Home () {
+import SwitchContainer from "../../../src/components/Switch/Switch";
+import ModalContainer from "../../../src/components/Modal/Modal";
+import TooltipContainer from "../../../src/components/Tooltip/Tooltip";
+export default function Home() {
   return (
     <main>
       {/* <button className="btn btn-primary">hola</button> */}
@@ -12,9 +14,10 @@ export default function Home () {
           <div className="banner-content">
             <p className="banner-text">
               Esta descripción de banner
-              <strong>puede tener énfasis</strong>
-              y
-              <a href="#" target="_blank" rel="noreferrer">enlace</a>
+              <strong>puede tener énfasis</strong>y
+              <a href="#" target="_blank" rel="noreferrer">
+                enlace
+              </a>
               .
             </p>
           </div>
@@ -22,12 +25,28 @@ export default function Home () {
         <div className="banner banner-dark">
           <div className="banner-content">
             <p className="banner-text">
-              Esta descripción de banner <strong>puede tener énfasis</strong> y <a href="#" target="_blank" rel="noreferrer">enlace</a>.
+              Esta descripción de banner <strong>puede tener énfasis</strong> y{" "}
+              <a href="#" target="_blank" rel="noreferrer">
+                enlace
+              </a>
+              .
             </p>
           </div>
         </div>
-      </div>
+        <div className="container">
+          {/* Switch */}
+          <h4>Switch</h4>
+          <SwitchContainer></SwitchContainer>
 
+          {/* Modal */}
+          <h4>Modal</h4>
+          <ModalContainer></ModalContainer>
+
+          {/* Tooltip */}
+          <h4>Tooltip</h4>
+          <TooltipContainer></TooltipContainer>
+        </div>
+      </div>
     </main>
   );
 }
