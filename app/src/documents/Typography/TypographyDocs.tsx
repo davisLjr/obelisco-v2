@@ -2,7 +2,7 @@
 import React, { useRef } from 'react';
 import { Scrollspy } from "@makotot/ghostui";
 import BoxTemplate from '@/components/Template/Box';
-import { Body, Tag, Title, Quote, List, Transformation } from '@testing/Typography/Typography';
+// import { Body, Tag, Title, Quote, List, Transformation } from '@testing/Typography/Typography';
 import HeadingTemplate from '@/components/Template/HeadingTemplate';
 import MainDescription from '@/components/Template/MainDescription';
 import SimpleText from '@/components/Template/SimpleText';
@@ -97,9 +97,9 @@ const TypographyDocs: React.FC = () => {
 
                       <br />
 
-                      <Title level="h1" content='Título h1 bold' weight="bold" />
+                      {/* <Title level="h1" content='Título h1 bold' weight="bold" />
                       <Title level="h1" content="Título h1 semibold" weight="semibold" />
-                      <Title level="h1" content="Título h1 normal" weight="normal" />
+                      <Title level="h1" content="Título h1 normal" weight="normal" /> */}
                     </section>
 
                     <Divisor />
@@ -114,12 +114,12 @@ const TypographyDocs: React.FC = () => {
                       <CodeCopy code={EGCodeTag} />
 
                       <br />
-
+                      {/* 
                       <Tag size="lg" weight='normal' content='Esto es un texto de titulares' />
                       <Tag size="lg" weight='semibold' content='Esto es un texto de titulares' />
                       <Tag size="lg" weight='bold' content='Esto es un texto de titulares' />
                       <Tag size="lg" weight='normal' italic='italic' content='Esto es un texto de titulares' />
-                      <Tag size="lg" weight='normal' underline='underline' content='Esto es un texto de titulares' />
+                      <Tag size="lg" weight='normal' underline='underline' content='Esto es un texto de titulares' /> */}
 
                     </section>
 
@@ -136,11 +136,11 @@ const TypographyDocs: React.FC = () => {
 
                       <br />
 
-                      <Body size="lg" weight='normal' content='Esto es un texto de cuerpos' />
+                      {/* <Body size="lg" weight='normal' content='Esto es un texto de cuerpos' />
                       <Body size="lg" weight='semibold' content='Esto es un texto de cuerpos' />
                       <Body size="lg" weight='bold' content='Esto es un texto de cuerpos' />
                       <Body size="lg" weight='normal' italic='italic' content='Esto es un texto de cuerpos' />
-                      <Body size="lg" weight='normal' underline='underline' content='Esto es un texto de cuerpos' />
+                      <Body size="lg" weight='normal' underline='underline' content='Esto es un texto de cuerpos' /> */}
 
                     </section>
 
@@ -156,8 +156,8 @@ const TypographyDocs: React.FC = () => {
                       <CodeCopy code={EGCodeQuoteAuthor} />
                       <br />
 
-                      <Quote content='Este es un apartado del texto que se quiere destacar por su importancia dentro del contenido de la página.' />
-                      <Quote content='Este es un apartado del texto que se quiere destacar por su importancia dentro del contenido de la página.' author='Nombre del autor de la cita' />
+                      {/* <Quote content='Este es un apartado del texto que se quiere destacar por su importancia dentro del contenido de la página.' />
+                      <Quote content='Este es un apartado del texto que se quiere destacar por su importancia dentro del contenido de la página.' author='Nombre del autor de la cita' /> */}
                     </section>
 
                     <Divisor />
@@ -172,9 +172,9 @@ const TypographyDocs: React.FC = () => {
 
                       <br />
 
-                      <List list="ol" content={["Esto es el texto de una lista ordenada", "Esto es el texto de una lista ordenada", "Esto es el texto de una lista ordenada",]} />
+                      {/* <List list="ol" content={["Esto es el texto de una lista ordenada", "Esto es el texto de una lista ordenada", "Esto es el texto de una lista ordenada",]} />
 
-                      <List list="ul" content={["Esto es el texto de una lista sin ordenar", "Esto es el texto de una lista sin ordenar", "Esto es el texto de una lista sin ordenar",]} />
+                      <List list="ul" content={["Esto es el texto de una lista sin ordenar", "Esto es el texto de una lista sin ordenar", "Esto es el texto de una lista sin ordenar",]} /> */}
 
                     </section>
 
@@ -191,9 +191,9 @@ const TypographyDocs: React.FC = () => {
 
                       <br />
 
-                      Nuestro sistema de <Transformation transform='strong' content='estándares' /> brinda un <Transformation transform='em' content='conjunto de herramientas' /> y componentes colaborativos
+                      {/* Nuestro sistema de <Transformation transform='strong' content='estándares' /> brinda un <Transformation transform='em' content='conjunto de herramientas' /> y componentes colaborativos
                       y <Transformation transform='em' content='accesibles' /> que define procesos para que los equipos internos y externos puedan trabajar alineadamente. De esta forma, ayudamos a crear <Transformation transform='mark' content='servicios' /> consistent<Transformation transform='sup' content='es' /> para mejorar
-                      la experiencia digit<Transformation transform='sub' content='al' /> de vecinos y vecina<Transformation transform='kbd' content='s' />.
+                      la experiencia digit<Transformation transform='sub' content='al' /> de vecinos y vecina<Transformation transform='kbd' content='s' />. */}
 
                     </section>
                   </div>
