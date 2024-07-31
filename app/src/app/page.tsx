@@ -41,6 +41,7 @@ export default function Home() {
         <Link href="/collapse" className="d-block">Colapsable</Link>
         <Link href="/button" className="d-block">Botones</Link>
         <Link href="/block" className="d-block">Bloque de trámite</Link>
+        <Link href="/badge" className="d-block">Etiquetas</Link>
       </div>
       
     </main>
