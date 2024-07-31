@@ -13,10 +13,10 @@ const HomeOne = () => (
           Crea aplicaciones React accesibles <strong>con velocidad</strong>
         </h1> */}
           <h1>
-            Crea aplicaciones React <strong>con velocidad</strong>
+            Crea aplicaciones Web <strong>con velocidad</strong>
           </h1>
           <p>
-            Descubre Obelisco, la librería de componentes para React que impulsa
+            Descubre Obelisco v2, la librería de estilos de componentes que impulsa
             la construcción rápida y elegante de interfaces.
           </p>
           {/* Simplifica el
