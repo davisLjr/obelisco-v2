@@ -1,6 +1,5 @@
-import SwitchContainer from "../../../src/components/Switch/Switch";
-import ModalContainer from "../../../src/components/Modal/Modal";
-import TooltipContainer from "../../../src/components/Tooltip/Tooltip";
+import Link from "next/link";
+
 export default function Home() {
   return (
     <main>
@@ -13,8 +12,7 @@ export default function Home() {
         <div className="banner">
           <div className="banner-content">
             <p className="banner-text">
-              Esta descripción de banner
-              <strong>puede tener énfasis</strong>y
+              Esta descripción de banner <strong>puede tener énfasis</strong> y{" "}
               <a href="#" target="_blank" rel="noreferrer">
                 enlace
               </a>
@@ -33,20 +31,19 @@ export default function Home() {
             </p>
           </div>
         </div>
-        <div className="container">
-          {/* Switch */}
-          <h4>Switch</h4>
-          <SwitchContainer></SwitchContainer>
-
-          {/* Modal */}
-          <h4>Modal</h4>
-          <ModalContainer></ModalContainer>
-
-          {/* Tooltip */}
-          <h4>Tooltip</h4>
-          <TooltipContainer></TooltipContainer>
-        </div>
       </div>
+      <hr />
+      <div className="container">
+        <h4>Componentes</h4>
+
+        <Link href="/alert" className="d-block">Alerta</Link>
+        <Link href="/cards" className="d-block">Tarjetas</Link>
+        <Link href="/collapse" className="d-block">Colapsable</Link>
+        <Link href="/button" className="d-block">Botones</Link>
+        <Link href="/block" className="d-block">Bloque de trámite</Link>
+        <Link href="/badge" className="d-block">Etiquetas</Link>
+      </div>
+      
     </main>
   );
 }
