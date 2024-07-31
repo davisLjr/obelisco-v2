@@ -39,6 +39,7 @@ export default function Home() {
         <Link href="/alert" className="d-block">Alerta</Link>
         <Link href="/cards" className="d-block">Tarjetas</Link>
         <Link href="/collapse" className="d-block">Colapsable</Link>
+        <Link href="/button" className="d-block">Botones</Link>
       </div>
       
     </main>
