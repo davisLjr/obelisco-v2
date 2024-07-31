@@ -88,15 +88,14 @@ $height-headline-sm: 1.25rem;
 $font-family-polyfill: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif,
   'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
 
-$font-family-base: 'Open Sans', $font-family-polyfill;
-$font-family-headings: 'Nunito', $font-family-base;
+$font-family-sans-serif: 'Open Sans', $font-family-polyfill;
+$font-family-headings: 'Nunito', $font-family-sans-serif;
 $headings-font-family: $font-family-headings;
+/* estilos para todos los titulos h1 al h6 */
 
 body {
-  font-family: $font-family-base;
+  font-family: $font-family-sans-serif;
 }
-
-/* estilos para todos los titulos h1 al h6 */
 
 /* 
   Las variables $display1-size a la $display4-size no se utilizan dentro de storybook,

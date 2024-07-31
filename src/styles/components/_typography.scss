@@ -1,6 +1,6 @@
 /* === Custom variables and mixins === */
 
-$text-muted: #505e70;
+$text-muted: $grisulado-700;
 
 // Links
 $link-decoration: underline;
@@ -145,7 +145,7 @@ small {
 blockquote {
   padding: 1.5rem 2rem;
   margin: 0;
-  border-left: spaceUnits(1) solid #505e70;
+  border-left: spaceUnits(1) solid $grisulado-700;
   font-style: italic;
 
   p {
@@ -166,11 +166,11 @@ blockquote {
 /* Fin de estilos customizados */
 
 /* Estilos mobile */
-@include media-breakpoint-down(592px) {
-  // blockquote {
-  //   padding-left: spaceUnits(6);
-  //   margin: spaceUnits(8) spaceUnits(22);
-  // }
+@include media-breakpoint-down(sm) {
+  blockquote {
+    padding-left: spaceUnits(6);
+    margin: spaceUnits(8) spaceUnits(22);
+  }
 
   h1,
   .h1 {

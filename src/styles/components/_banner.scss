@@ -11,34 +11,29 @@ $banner-padding-mobile: 0.25rem;
 /* === Custom styles === */
 .banner {
   padding: $banner-padding;
-  background-color: #e6ebf0;
+  background-color: $grisulado-50;
+  outline: 0.125rem solid transparent;
   word-break: break-word;
   width: $banner-width;
 
-  &:has(.banner-actions) {
-    @include media-breakpoint-down(sm) {
-      padding-top: $banner-padding - $banner-padding-mobile;
-    }
-  }
-
   a:not(.btn) {
-    color: #38485c;
+    color: $body-color;
   }
 
   &.banner-dark {
-    background-color: #38485c;
-    color: white;
+    background-color: $dark;
+    color: $white;
 
     a:not(.btn) {
-      color: white;
+      color: $white;
 
       &:focus {
-        box-shadow: 0 0 0 0.125rem white;
+        box-shadow: 0 0 0 0.125rem $white;
       }
     }
 
     .btn:focus {
-      box-shadow: 0 0 0 0.25rem white;
+      box-shadow: 0 0 0 0.25rem $white;
     }
   }
 
@@ -51,18 +46,10 @@ $banner-padding-mobile: 0.25rem;
     align-items: center;
     grid-gap: $banner-gap;
 
-    @include media-breakpoint-down(sm) {
-      grid-row-gap: $banner-gap - $banner-padding-mobile;
-    }
-
     .material-icons-round,
     .bx {
       font-size: $banner-icon-size;
       grid-column: 1 / 2;
-
-      @include media-breakpoint-down(592px) {
-        padding-top: $banner-padding-mobile;
-      }
     }
 
     .banner-text {
@@ -76,12 +63,13 @@ $banner-padding-mobile: 0.25rem;
       align-items: center;
       gap: $banner-actions-gap;
 
-      @include media-breakpoint-down(592px) {
+      @include media-breakpoint-down(sm) {
         flex-wrap: wrap;
       }
     }
 
-    &:has(.banner-actions) {
+    &:has(.banner-actions),
+    &:has(.material-icons-round, .bx) {
       .banner-text {
         display: -webkit-box;
         -webkit-line-clamp: 1;
@@ -91,11 +79,10 @@ $banner-padding-mobile: 0.25rem;
         overflow: hidden;
         line-height: 30px;
 
-        @include media-breakpoint-down(592px) {
+        @include media-breakpoint-down(sm) {
           -webkit-line-clamp: 3;
           line-clamp: 3;
           line-height: 24px;
-          padding: $banner-padding-mobile 0;
         }
       }
     }
@@ -124,7 +111,7 @@ $banner-padding-mobile: 0.25rem;
       grid-template-columns: auto 1fr;
     }
 
-    @include media-breakpoint-down(592px) {
+    @include media-breakpoint-down(sm) {
       grid-template-columns: auto 1fr;
       grid-template-rows: auto;
 
