@@ -5,6 +5,7 @@
 
 // Import custom variables and mixins
 @import "variables/variables";
+@import "variables/breakpoints";
 @import "variables/mixins";
 @import "variables/typography";
 @import "variables/colors";
@@ -15,4 +16,5 @@
 @import "components/button";
 @import "components/cards";
 @import "components/typography";
+@import "components/collapse";
 // @import "components/card";

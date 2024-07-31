@@ -125,6 +125,79 @@ export default function Cards() {
       <br />
       <br />
       <br />
+      <div className="container">
+        <div
+          className="responsive-scroll vertical-cards-container"
+          tabIndex={0}
+        >
+          <div className="card">
+            <img
+              src="https://gcba.github.io/Obelisco/cards/img-top.jpg"
+              className="card-img-top"
+              alt="descripción de imagen"
+            />
+            <div className="card-body">
+              <div className="card-badges">
+                <span className="badge badge-secondary">Etiqueta 1</span>
+                <span className="badge badge-secondary">Etiqueta 2</span>
+              </div>
+              <h3 className="card-title">
+                <a href="#" className="card-title-link">
+                  Título de la tarjeta con más de una línea
+                </a>
+              </h3>
+              <p className="card-text">Descripción de la tarjeta</p>
+              <div className="card-info">
+                <small>Fecha de publicación</small>
+              </div>
+            </div>
+          </div>
+          <div className="card">
+            <img
+              src="https://gcba.github.io/Obelisco/cards/img-top.jpg"
+              className="card-img-top"
+              alt="descripción de imagen"
+            />
+            <div className="card-body">
+              <div className="card-badges">
+                <span className="badge badge-secondary">Etiqueta 1</span>
+                <span className="badge badge-secondary">Etiqueta 2</span>
+              </div>
+              <h3 className="card-title">
+                <a href="#" className="card-title-link">
+                  Título de la tarjeta con más de una línea
+                </a>
+              </h3>
+              <p className="card-text">Descripción de la tarjeta</p>
+              <div className="card-info">
+                <small>Fecha de publicación</small>
+              </div>
+            </div>
+          </div>
+          <div className="card">
+            <img
+              src="https://gcba.github.io/Obelisco/cards/img-top.jpg"
+              className="card-img-top"
+              alt="descripción de imagen"
+            />
+            <div className="card-body">
+              <div className="card-badges">
+                <span className="badge badge-secondary">Etiqueta 1</span>
+                <span className="badge badge-secondary">Etiqueta 2</span>
+              </div>
+              <h3 className="card-title">
+                <a href="#" className="card-title-link">
+                  Título de la tarjeta con más de una línea
+                </a>
+              </h3>
+              <p className="card-text">Descripción de la tarjeta</p>
+              <div className="card-info">
+                <small>Fecha de publicación</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </main>
   );
 }

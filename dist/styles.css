@@ -11846,6 +11846,36 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+/* $grid-breakpoints: (
+  xs: 0,
+  sm: 592px,
+  md: 752px,
+  lg: 976px,
+  xl: 1120px
+); */
+/* $container-max-widths: (
+  sm: 560px,
+  md: 720px,
+  lg: 944px,
+  xl: 1088px
+); */
+/* body {
+  @include media-breakpoint-up(xs) {
+    background-color: white;
+  }
+  @include media-breakpoint-up(sm) {
+    background-color: aqua;
+  }
+  @include media-breakpoint-up(md) {
+    background-color: orange;
+  }
+  @include media-breakpoint-up(lg) {
+    background-color: violet;
+  }
+  @include media-breakpoint-up(xl) {
+    background-color: blue;
+  }
+} */
 /* === Variable and mixins overides === */
 /*
   En esta hoja al realizar la refactorizacion de tipografia, se dejaron comentarios con la finalidad
@@ -12081,7 +12111,7 @@ body {
   height: 1.5rem;
 }
 
-@media (max-width: 575.98px) {
+@media (max-width: 591.98px) {
   .alert {
     padding-left: 3.25rem;
     padding-right: 1rem;
@@ -12104,7 +12134,7 @@ body {
   word-break: break-word;
   width: 100%;
 }
-@media (max-width: 575.98px) {
+@media (max-width: 591.98px) {
   .banner:has(.banner-actions) {
     padding-top: 0.75rem;
   }
@@ -12136,7 +12166,7 @@ body {
   grid-template-columns: auto 1fr;
   grid-template-rows: auto;
 }
-@media (max-width: 575.98px) {
+@media (max-width: 591.98px) {
   .banner .banner-content {
     grid-row-gap: 0.5rem;
   }
@@ -12303,7 +12333,7 @@ body {
   vertical-align: sub;
   margin-right: spaceUnits(1);
 }
-@media (min-width: 768px) {
+@media (min-width: 752px) {
   .card .card-footer {
     margin: -1rem 1.5rem 0;
   }
@@ -12428,7 +12458,7 @@ body {
 .card.card-horizontal.card-simple.card-horizontal .card-img-left + .card-body, .card.card-horizontal.card-simple.card-horizontal .card-icon-left + .card-body {
   padding-left: 0;
 }
-@media (min-width: 768px) {
+@media (min-width: 752px) {
   .card.card-horizontal.card-simple.card-horizontal {
     flex-direction: row;
   }
@@ -12458,7 +12488,7 @@ body {
   padding: 1.5rem 1rem;
   padding-left: 0;
 }
-@media (min-width: 768px) {
+@media (min-width: 752px) {
   .card.card-horizontal.card-simple.card-lg {
     flex-direction: row;
     gap: 1.5rem;
@@ -12478,30 +12508,30 @@ body {
 .card-deck .card:nth-of-type(n + 3),
 .card-deck .group-access:nth-of-type(n + 3),
 .card-deck .list-group-item:nth-of-type(n + 3) {
-  margin-top: 1.5rem;
+  margin-top: 30px;
 }
 
 .card-deck .group-access {
-  margin-bottom: 0.75rem;
+  margin-bottom: 15px;
 }
-@media (min-width: 576px) {
+@media (min-width: 592px) {
   .card-deck {
     display: flex;
     flex-flow: row wrap;
-    margin-right: -0.75rem;
-    margin-left: -0.75rem;
+    margin-right: -15px;
+    margin-left: -15px;
   }
   .card-deck .group-access {
-    margin-right: 0.75rem;
+    margin-right: 15px;
     margin-bottom: 0;
-    margin-left: 0.75rem;
+    margin-left: 15px;
   }
 }
 .card-deck .card:nth-of-type(2) {
   margin-top: 30px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 752px) {
   .card-deck:not(.max-cards-2) .card,
   .card-deck:not(.max-cards-2) .group-access,
   .card-deck:not(.max-cards-2) .list-group-item,
@@ -12517,10 +12547,10 @@ body {
   .card-deck.max-cards-3 .card:nth-of-type(n + 4),
   .card-deck.max-cards-3 .group-access:nth-of-type(n + 4),
   .card-deck.max-cards-3 .list-group-item:nth-of-type(n + 4) {
-    margin-top: 1.5rem;
+    margin-top: 30px;
   }
 }
-@media (min-width: 992px) {
+@media (min-width: 976px) {
   .card-deck:not(.max-cards-2):not(.max-cards-3) .card,
   .card-deck:not(.max-cards-2):not(.max-cards-3) .group-access,
   .card-deck:not(.max-cards-2):not(.max-cards-3) .list-group-item {
@@ -12530,7 +12560,7 @@ body {
   .card-deck:not(.max-cards-2):not(.max-cards-3) .card:nth-of-type(n + 5),
   .card-deck:not(.max-cards-2):not(.max-cards-3) .group-access:nth-of-type(n + 5),
   .card-deck:not(.max-cards-2):not(.max-cards-3) .list-group-item:nth-of-type(n + 5) {
-    margin-top: 1.5rem;
+    margin-top: 30px;
   }
 }
 .card-deck.max-cards-1 .card,
@@ -12542,7 +12572,7 @@ body {
 .card-deck.max-cards-1 .card:nth-of-type(n + 2),
 .card-deck.max-cards-1 .group-access:nth-of-type(n + 2),
 .card-deck.max-cards-1 .list-group-item:nth-of-type(n + 2) {
-  margin-top: 1.5rem;
+  margin-top: 30px;
 }
 
 .card-deck.card-column .card,
@@ -12551,14 +12581,14 @@ body {
   max-width: calc(25% - 30px);
   max-width: 100%;
 }
-@media (max-width: 767.98px) {
+@media (max-width: 751.98px) {
   .card-deck.card-column .card,
   .card-deck.card-column .group-access,
   .card-deck.card-column .list-group-item {
     max-width: calc(33.3333333333% - 30px);
   }
 }
-@media (max-width: 575.98px) {
+@media (max-width: 591.98px) {
   .card-deck.card-column .card,
   .card-deck.card-column .group-access,
   .card-deck.card-column .list-group-item {
@@ -12572,7 +12602,7 @@ body {
   max-width: calc(33.3333333333% - 30px);
   max-width: 100%;
 }
-@media (max-width: 575.98px) {
+@media (max-width: 591.98px) {
   .card-deck.max-cards-3.card-column .card,
   .card-deck.max-cards-3.card-column .group-access,
   .card-deck.max-cards-3.card-column .list-group-item {
@@ -12598,7 +12628,7 @@ body {
 .card-deck.max-cards-1.card-column .list-group-item:nth-of-type(-n + 3) {
   margin-top: 0px;
 }
-@media (max-width: 575.98px) {
+@media (max-width: 591.98px) {
   .card-deck.max-cards-1.card-column .card,
   .card-deck.max-cards-1.card-column .group-access,
   .card-deck.max-cards-1.card-column .list-group-item {
