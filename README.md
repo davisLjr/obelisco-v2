@@ -1,5 +1,4 @@
-> .[!NOTE].
-> Este Repositorio es solo de prueba
+> **NOTE:** Este Repositorio es solo de prueba
 
 > .[!IMPORTANT].
 > Si quieres el repositorio oficial, contacta a GCBA secretaria de innovacion y transformacion digital
