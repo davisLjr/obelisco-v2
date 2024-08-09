@@ -1,10 +1,18 @@
-> **NOTE:** Este Repositorio es solo de prueba
 
-> .[!IMPORTANT].
-> Si quieres el repositorio oficial, contacta a GCBA secretaria de innovacion y transformacion digital
+> [!NOTE]
+> Useful information that users should know, even when skimming content.
 
-> .[!WARNING].
-> Node v18 como minimo
+> [!TIP]
+> Helpful advice for doing things better or more easily.
+
+> [!IMPORTANT]
+> Key information users need to know to achieve their goal.
+
+> [!WARNING]
+> Urgent info that needs immediate user attention to avoid problems.
+
+> [!CAUTION]
+> Advises about risks or negative outcomes of certain actions.
 
 # instalaccion
 
